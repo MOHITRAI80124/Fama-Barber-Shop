@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fama Barber Shop and Beauty Salon - Denton, TX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="antialiased">
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white hover:text-gray-300 transition duration-300">
+                Fama Barber Shop
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-300 hover:text-white transition duration-300 nav-link-active">Home</a>
+                <a href="#services" class="text-gray-300 hover:text-white transition duration-300">Services</a>
+                <a href="#gallery" class="text-gray-300 hover:text-white transition duration-300">Gallery</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+                <a href="#booking" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300 shadow">
+                    Book Appointment
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 px-6 pb-4 space-y-2">
+            <a href="#home" class="block text-gray-300 hover:text-white transition duration-300 py-1">Home</a>
+            <a href="#services" class="block text-gray-300 hover:text-white transition duration-300 py-1">Services</a>
+            <a href="#gallery" class="block text-gray-300 hover:text-white transition duration-300 py-1">Gallery</a>
+            <a href="#contact" class="block text-gray-300 hover:text-white transition duration-300 py-1">Contact</a>
+            <a href="#booking" class="block mt-2 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-medium py-2 px-4 rounded-lg transition duration-300 shadow">
+                Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative h-[70vh] min-h-[400px] flex items-center justify-center text-center bg-cover bg-center bg-no-repeat" style="background-image: url('https://placehold.co/1920x1080/2d2d2d/666?text=Barbershop+Interior');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 p-6 max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+                    Fama Barber Shop <span class="block md:inline">&</span> Beauty Salon
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Premier Barbering and Beauty Services in Denton. Crafting confidence, one cut at a time.
+                </p>
+                <a href="#booking" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg">
+                    Book Your Appointment
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-gray-800 fade-in-section">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Welcome to Fama</h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    At Fama Barber Shop and Beauty Salon, we're dedicated to providing exceptional haircuts, shaves, and beauty treatments in a welcoming atmosphere. Our experienced stylists stay updated on the latest trends to ensure you leave looking and feeling your best. Visit us in Denton for a premium grooming experience.
+                </p>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 md:py-24 bg-gray-900 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">What We Offer</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-3 text-white">Modern Haircuts</h3>
+                        <p class="text-gray-400 mb-4">Fades, tapers, classic cuts, and contemporary styles tailored to you.</p>
+                        <a href="#booking" class="text-indigo-400 hover:text-indigo-300 font-medium">Book Now &rarr;</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-3 text-white">Beard Trims & Shaves</h3>
+                        <p class="text-gray-400 mb-4">Expert shaping, trimming, and relaxing hot towel shaves.</p>
+                        <a href="#booking" class="text-indigo-400 hover:text-indigo-300 font-medium">Book Now &rarr;</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-3 text-white">Beauty & Styling</h3>
+                        <p class="text-gray-400 mb-4">Salon services including styling, treatments, and more. (Specify services)</p>
+                        <a href="#booking" class="text-indigo-400 hover:text-indigo-300 font-medium">Book Now &rarr;</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="rating" class="py-16 md:py-24 bg-gray-800 fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white">Why Choose Us?</h2>
+                <div class="bg-gray-700 inline-block p-8 rounded-lg shadow-xl">
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-5xl font-bold text-yellow-400 mr-3">4.6</span>
+                        <div>
+                            <div class="flex text-yellow-400 text-2xl">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> </div>
+                            <p class="text-gray-300 text-lg">(Based on 116+ Reviews)</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-300 max-w-xl mx-auto">
+                        Our clients consistently rate us highly for our quality service, skilled stylists, and friendly atmosphere.
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <blockquote class="italic text-gray-400">"Great cut, clean shop, highly recommend!" - Happy Client</blockquote>
+                        <blockquote class="italic text-gray-400">"Finally found my go-to barber in Denton." - Another Satisfied Customer</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-16 md:py-24 bg-gray-900 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Style Gallery</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <img src="https://www.menshairstylestoday.com/wp-content/uploads/2023/04/Barbershop-Haircuts.jpg.webp" alt="Gallery Image 1" class="rounded-lg shadow-md aspect-square object-cover hover:opacity-80 transition duration-300">
+                    <img src="https://previews.123rf.com/images/chid87/chid872003/chid87200300060/148948727-mens-haircut-in-barber-shop-mens-haircut-shaving.jpg" alt="Gallery Image 2" class="rounded-lg shadow-md aspect-square object-cover hover:opacity-80 transition duration-300">
+                    <img src="https://www.franciscosegarra.com/wp-content/uploads/eu/2016/11/interior-decoration-of-barbershop.jpg" alt="Gallery Image 3" class="rounded-lg shadow-md aspect-square object-cover hover:opacity-80 transition duration-300">
+                    <img src="https://i.pinimg.com/736x/16/54/f3/1654f3746475a9f8bc0b4c889fe45024.jpg" alt="Gallery Image 4" class="rounded-lg shadow-md aspect-square object-cover hover:opacity-80 transition duration-300">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-gray-800 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Visit Us or Get In Touch</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Our Location</h3>
+                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg mb-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.646892251984!2d-97.1388586848118!3d33.2169449808949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dca669e1e056b%3A0x7e4e3e036a1a0f8a!2s500%20N%20Bell%20Ave%20%23109%2C%20Denton%2C%20TX%2076209%2C%20USA!5e0!3m2!1sen!2sin!4v1678886600000!5m2!1sen!2sin"
+                                width="100%"
+                                height="350"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="rounded-lg">
+                            </iframe>
+                        </div>
+                        <p class="text-lg text-gray-300 mb-2">
+                            <i class="fas fa-map-marker-alt mr-2 text-indigo-400"></i>
+                            500 N Bell Ave #109, Denton, TX 76209, United States
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=500+N+Bell+Ave+%23109,+Denton,+TX+76209" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 font-medium inline-block mb-4">
+                            Get Directions &rarr;
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Contact & Hours</h3>
+                        <div class="mb-6">
+                            <p class="text-lg text-gray-300 mb-2">
+                                <i class="fas fa-phone mr-2 text-indigo-400"></i>
+                                Phone: <a href="tel:+19406129127" class="hover:text-indigo-300 transition duration-300">+1 940-612-9127</a>
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                <i class="fas fa-envelope mr-2 text-indigo-400"></i>
+                                Email: <a href="mailto:info@famabarber.com" class="hover:text-indigo-300 transition duration-300">info@famabarber.com</a> (Placeholder)
+                            </p>
+                        </div>
+
+                        <h4 class="text-xl font-semibold mb-3 text-white">Opening Hours</h4>
+                        <p class="text-gray-400 mb-4">Currently: <span class="font-medium text-green-400">Open</span> &bull; Closes 7 PM</p>
+                        <ul class="space-y-1 text-gray-300">
+                            <li>Monday - Friday: 9:00 AM - 7:00 PM (Example)</li>
+                            <li>Saturday: 9:00 AM - 6:00 PM (Example)</li>
+                            <li>Sunday: Closed (Example)</li>
+                            </ul>
+
+                        <div id="booking" class="mt-8">
+                            <h3 class="text-2xl font-semibold mb-4 text-white">Ready for Your Next Cut?</h3>
+                            <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg inline-block">
+                                Book Online Now
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" aria-label="Facebook" class="hover:text-white transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" aria-label="Instagram" class="hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" aria-label="Yelp" class="hover:text-white transition duration-300"><i class="fab fa-yelp text-xl"></i></a>
+            </div>
+            <p class="text-sm">
+                &copy; <span id="current-year"></span> Fama Barber Shop and Beauty Salon. All Rights Reserved.
+            </p>
+            <p class="text-xs mt-1">
+                500 N Bell Ave #109, Denton, TX 76209 | <a href="tel:+19406129127" class="hover:text-white">+1 940-612-9127</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
